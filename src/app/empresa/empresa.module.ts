@@ -7,9 +7,7 @@ import { EliminarComponent } from './eliminar/eliminar.component';
 import { HomeEmpresaComponent } from './home-empresa/home-empresa.component';
 import { EmpresaRoutingModule } from './empresa-routing.module';
 import {MaterialModule} from '../material/material.module';
-
-
-
+import { EmpresaService } from './empresa.service';
 
 @NgModule({
   declarations: [
@@ -30,6 +28,9 @@ import {MaterialModule} from '../material/material.module';
     EditarComponent,
     EliminarComponent,
     HomeEmpresaComponent
+  ],
+  providers:[
+    EmpresaService
   ]
 })
 export class EmpresaModule { }
