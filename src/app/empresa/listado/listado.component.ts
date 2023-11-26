@@ -8,7 +8,7 @@ import { EmpresaService } from '../empresa.service';
 })
 export class ListadoComponent implements OnInit {
 
-  displayedColumns: string[] = ['id', 'nombreCompania', 'direccion', 'telefono','telefono2'];
+  displayedColumns: string[] = ['id', 'nombreCompania', 'direccion', 'telefono','telefono2','accion'];
 
   constructor(private servicio: EmpresaService){}
 
